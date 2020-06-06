@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>register</title>
+</head>
+<body>
+	<center><br>
+		<h1>register here</h1><br>
+		<form action="/user/register" method="post" class="form">
+			<%- include("./errors")%>
+			<div class="form-group"><input type="text" name="name" placeholder="enter name" class="form-control"></div>
+			<div class="form-group"><input type="email" name="email" placeholder="enter email" class="form-control"></div>
+			<div class="form-group"><input type="password" name="password1" placeholder="enter password" class="form-control"></div>
+			<div class="form-group"><input type="password" name="password2" placeholder="confirm password" class="form-control"></div>
+			<input type="submit" value="register" class="btn btn-primary">
+			
+		</form>
+		<a href="/user/login">login</a>
+	</center>
+</body>
+</html>
